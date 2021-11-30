@@ -14,14 +14,11 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
 
-
-
 //NameSpace connection..............
 let socket=io("/sell");
 socket.on("MyEvent",function(data){
 document.getElementById('msg').innerHTML=data;
 })
-
 
 //BroadCast connction................
 // let socket=io();
